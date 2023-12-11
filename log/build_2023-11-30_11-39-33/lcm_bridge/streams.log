@@ -1,0 +1,232 @@
+[0.071s] Invoking command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/code/ros2_ws/src/lcm_bridge -DCMAKE_INSTALL_PREFIX=/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge
+[0.488s] -- The C compiler identification is GNU 11.4.0
+[0.816s] -- The CXX compiler identification is GNU 11.4.0
+[0.848s] -- Detecting C compiler ABI info
+[1.421s] -- Detecting C compiler ABI info - done
+[1.441s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.441s] -- Detecting C compile features
+[1.442s] -- Detecting C compile features - done
+[1.447s] -- Detecting CXX compiler ABI info
+[1.988s] -- Detecting CXX compiler ABI info - done
+[2.006s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.007s] -- Detecting CXX compile features
+[2.007s] -- Detecting CXX compile features - done
+[2.016s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.708s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.891s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.893s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.899s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.928s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.707s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.365s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.235s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.324s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.325s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.419s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.419s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.419s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.420s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.507s] -- Found PythonExtra: .so  
+[5.626s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.788s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.790s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_c>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_cpp>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_introspection_cpp>;/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_c;/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_py
+[5.790s] -- Configured cppcheck exclude dirs and/or files: 
+[5.807s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.839s] -- Added test 'lint_cmake' to check CMake code style
+[5.856s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.989s] -- Added test 'uncrustify' to check C / C++ code style
+[5.990s] -- Configured uncrustify additional arguments: 
+[6.008s] -- Added test 'xmllint' to check XML markup files
+[6.032s] -- Configuring done
+[6.257s] -- Generating done
+[6.283s] -- Build files have been written to: /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge
+[6.294s] Invoked command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/code/ros2_ws/src/lcm_bridge -DCMAKE_INSTALL_PREFIX=/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge
+[6.300s] Invoking command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge -- -j8 -l8
+[6.598s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.702s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.747s] [  6%] Built target ament_cmake_python_copy_lcm_bridge
+[7.133s] [  6%] Built target lcm_bridge__cpp
+[7.148s] [  9%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_generator_c.dir/rosidl_generator_c/lcm_bridge/msg/detail/num__functions.c.o[0m
+[7.209s] running egg_info
+[7.211s] creating lcm_bridge.egg-info
+[7.211s] writing lcm_bridge.egg-info/PKG-INFO
+[7.212s] writing dependency_links to lcm_bridge.egg-info/dependency_links.txt
+[7.213s] writing top-level names to lcm_bridge.egg-info/top_level.txt
+[7.214s] writing manifest file 'lcm_bridge.egg-info/SOURCES.txt'
+[7.217s] reading manifest file 'lcm_bridge.egg-info/SOURCES.txt'
+[7.219s] writing manifest file 'lcm_bridge.egg-info/SOURCES.txt'
+[7.243s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.244s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.244s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.296s] [ 19%] Built target ament_cmake_python_build_lcm_bridge_egg
+[7.494s] [ 22%] [32m[1mLinking C shared library liblcm_bridge__rosidl_generator_c.so[0m
+[7.718s] [ 25%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lcm_bridge/msg/num__type_support.cpp.o[0m
+[7.747s] [ 25%] Built target lcm_bridge__rosidl_generator_c
+[7.785s] [ 32%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lcm_bridge/msg/detail/num__type_support.cpp.o[0m
+[7.786s] [ 32%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lcm_bridge/msg/detail/dds_fastrtps/num__type_support.cpp.o[0m
+[7.861s] [ 38%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.862s] [ 38%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.863s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[8.337s] [ 45%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/lcm_bridge/msg/num__type_support.cpp.o[0m
+[8.412s] [ 51%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lcm_bridge/msg/detail/num__type_support_c.cpp.o[0m
+[8.412s] [ 51%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lcm_bridge/msg/detail/num__type_support.c.o[0m
+[8.467s] [ 54%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_cpp.so[0m
+[8.676s] [ 58%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_introspection_cpp.so[0m
+[8.714s] [ 61%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_c.so[0m
+[8.757s] [ 64%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_fastrtps_cpp.so[0m
+[8.758s] [ 64%] Built target lcm_bridge__rosidl_typesupport_cpp
+[8.780s] [ 67%] [32m[1mLinking C shared library liblcm_bridge__rosidl_typesupport_introspection_c.so[0m
+[8.963s] [ 67%] Built target lcm_bridge__rosidl_typesupport_introspection_cpp
+[8.993s] [ 67%] Built target lcm_bridge__rosidl_typesupport_c
+[9.038s] [ 67%] Built target lcm_bridge__rosidl_typesupport_introspection_c
+[9.052s] [ 67%] Built target lcm_bridge__rosidl_typesupport_fastrtps_cpp
+[9.283s] [ 70%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_fastrtps_c.so[0m
+[9.528s] [ 70%] Built target lcm_bridge__rosidl_typesupport_fastrtps_c
+[9.708s] [ 70%] Built target lcm_bridge
+[9.896s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.349s] [ 74%] Built target lcm_bridge__py
+[10.536s] [ 77%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_generator_py.dir/rosidl_generator_py/lcm_bridge/msg/_num_s.c.o[0m
+[10.956s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/liblcm_bridge__rosidl_generator_py.so[0m
+[11.171s] [ 80%] Built target lcm_bridge__rosidl_generator_py
+[11.384s] [ 90%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.385s] [ 90%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.386s] [ 90%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_c.c.o[0m
+[11.806s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.819s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.819s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.048s] [100%] Built target lcm_bridge__rosidl_typesupport_c__pyext
+[12.060s] [100%] Built target lcm_bridge__rosidl_typesupport_fastrtps_c__pyext
+[12.060s] [100%] Built target lcm_bridge__rosidl_typesupport_introspection_c__pyext
+[12.117s] Invoked command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge -- -j8 -l8
+[13.191s] Invoking command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge
+[13.241s] -- Install configuration: ""
+[13.244s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/rosidl_interfaces/lcm_bridge
+[13.249s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+[13.250s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+[13.251s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_generator_c__visibility_control.h
+[13.254s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/num.h
+[13.256s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+[13.258s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__functions.c
+[13.260s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__struct.h
+[13.262s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__functions.h
+[13.263s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__type_support.h
+[13.266s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/library_path.sh
+[13.269s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/library_path.dsv
+[13.272s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_c.so
+[13.277s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_c.so" to ""
+[13.278s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+[13.278s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+[13.279s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+[13.280s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[13.282s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.284s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_c.so
+[13.286s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_c.so" to ""
+[13.287s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+[13.288s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+[13.288s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+[13.288s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__type_support.c
+[13.291s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_introspection_c.h
+[13.293s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.295s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_c.so
+[13.298s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_c.so" to ""
+[13.299s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_c.so
+[13.301s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_c.so" to ""
+[13.302s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+[13.302s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+[13.303s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+[13.304s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__traits.hpp
+[13.305s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__builder.hpp
+[13.307s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__struct.hpp
+[13.309s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/num.hpp
+[13.311s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+[13.312s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+[13.312s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.314s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+[13.314s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[13.316s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/dds_fastrtps
+[13.318s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_cpp.so
+[13.321s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_cpp.so" to ""
+[13.322s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+[13.322s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+[13.323s] -- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+[13.324s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[13.325s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__type_support.cpp
+[13.327s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_cpp.so
+[13.331s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_cpp.so" to ""
+[13.331s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_cpp.so
+[13.334s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_cpp.so" to ""
+[13.335s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/pythonpath.sh
+[13.336s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/pythonpath.dsv
+[13.339s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info
+[13.340s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/PKG-INFO
+[13.342s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/SOURCES.txt
+[13.344s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/top_level.txt
+[13.346s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/dependency_links.txt
+[13.348s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge
+[13.349s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.352s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_introspection_c.c
+[13.354s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.356s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg
+[13.357s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/_num_s.c
+[13.359s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/__init__.py
+[13.361s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/_num.py
+[13.363s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_c.c
+[13.365s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.367s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/__init__.py
+[13.370s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.373s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/liblcm_bridge__rosidl_generator_py.so
+[13.506s] Listing '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge'...
+[13.507s] Compiling '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/__init__.py'...
+[13.507s] Listing '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg'...
+[13.508s] Compiling '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/__init__.py'...
+[13.508s] Compiling '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/_num.py'...
+[13.515s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.517s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[13.518s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.520s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[13.521s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.523s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[13.523s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_py.so
+[13.526s] -- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_py.so" to ""
+[13.527s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/msg/Num.idl
+[13.528s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/msg/Num.msg
+[13.530s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/package_run_dependencies/lcm_bridge
+[13.532s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/parent_prefix_path/lcm_bridge
+[13.533s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/ament_prefix_path.sh
+[13.534s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/ament_prefix_path.dsv
+[13.536s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/path.sh
+[13.538s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/path.dsv
+[13.539s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.bash
+[13.541s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.sh
+[13.542s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.zsh
+[13.543s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.dsv
+[13.545s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/package.dsv
+[13.547s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/packages/lcm_bridge
+[13.549s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_cExport.cmake
+[13.550s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_cExport-noconfig.cmake
+[13.552s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cExport.cmake
+[13.553s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.555s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cExport.cmake
+[13.557s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.559s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cExport.cmake
+[13.560s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cExport-noconfig.cmake
+[13.561s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_cppExport.cmake
+[13.563s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.564s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.566s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cppExport.cmake
+[13.568s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.569s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cppExport.cmake
+[13.571s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cppExport-noconfig.cmake
+[13.572s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_pyExport.cmake
+[13.573s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_pyExport-noconfig.cmake
+[13.575s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/rosidl_cmake-extras.cmake
+[13.577s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.579s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[13.580s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[13.582s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.583s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.584s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.586s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridgeConfig.cmake
+[13.588s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridgeConfig-version.cmake
+[13.589s] -- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/package.xml
+[13.600s] Invoked command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge

@@ -1,0 +1,6 @@
+Invoking command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/code/ros2_ws/src/lcm_bridge -DCMAKE_INSTALL_PREFIX=/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge
+Invoked command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/code/ros2_ws/src/lcm_bridge -DCMAKE_INSTALL_PREFIX=/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge
+Invoking command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge -- -j8 -l8
+Invoked command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge -- -j8 -l8
+Invoking command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge
+Invoked command in '/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge

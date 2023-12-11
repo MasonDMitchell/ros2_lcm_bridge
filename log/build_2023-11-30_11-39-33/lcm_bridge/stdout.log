@@ -1,0 +1,226 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_c>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_cpp>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_typesupport_introspection_cpp>;/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_c;/root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge/rosidl_generator_py
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/code/ros2_ws/src/lcm_bridge/build/lcm_bridge
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  6%] Built target ament_cmake_python_copy_lcm_bridge
+[  6%] Built target lcm_bridge__cpp
+[  9%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_generator_c.dir/rosidl_generator_c/lcm_bridge/msg/detail/num__functions.c.o[0m
+running egg_info
+creating lcm_bridge.egg-info
+writing lcm_bridge.egg-info/PKG-INFO
+writing dependency_links to lcm_bridge.egg-info/dependency_links.txt
+writing top-level names to lcm_bridge.egg-info/top_level.txt
+writing manifest file 'lcm_bridge.egg-info/SOURCES.txt'
+reading manifest file 'lcm_bridge.egg-info/SOURCES.txt'
+writing manifest file 'lcm_bridge.egg-info/SOURCES.txt'
+[ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 19%] Built target ament_cmake_python_build_lcm_bridge_egg
+[ 22%] [32m[1mLinking C shared library liblcm_bridge__rosidl_generator_c.so[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lcm_bridge/msg/num__type_support.cpp.o[0m
+[ 25%] Built target lcm_bridge__rosidl_generator_c
+[ 32%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lcm_bridge/msg/detail/num__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lcm_bridge/msg/detail/dds_fastrtps/num__type_support.cpp.o[0m
+[ 38%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 38%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/lcm_bridge/msg/num__type_support.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/lcm_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lcm_bridge/msg/detail/num__type_support_c.cpp.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lcm_bridge/msg/detail/num__type_support.c.o[0m
+[ 54%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_cpp.so[0m
+[ 58%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_introspection_cpp.so[0m
+[ 61%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_c.so[0m
+[ 64%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 64%] Built target lcm_bridge__rosidl_typesupport_cpp
+[ 67%] [32m[1mLinking C shared library liblcm_bridge__rosidl_typesupport_introspection_c.so[0m
+[ 67%] Built target lcm_bridge__rosidl_typesupport_introspection_cpp
+[ 67%] Built target lcm_bridge__rosidl_typesupport_c
+[ 67%] Built target lcm_bridge__rosidl_typesupport_introspection_c
+[ 67%] Built target lcm_bridge__rosidl_typesupport_fastrtps_cpp
+[ 70%] [32m[1mLinking CXX shared library liblcm_bridge__rosidl_typesupport_fastrtps_c.so[0m
+[ 70%] Built target lcm_bridge__rosidl_typesupport_fastrtps_c
+[ 70%] Built target lcm_bridge
+[ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 74%] Built target lcm_bridge__py
+[ 77%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_generator_py.dir/rosidl_generator_py/lcm_bridge/msg/_num_s.c.o[0m
+[ 80%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/liblcm_bridge__rosidl_generator_py.so[0m
+[ 80%] Built target lcm_bridge__rosidl_generator_py
+[ 90%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/lcm_bridge__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_c.c.o[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target lcm_bridge__rosidl_typesupport_c__pyext
+[100%] Built target lcm_bridge__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target lcm_bridge__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/rosidl_interfaces/lcm_bridge
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/num.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__functions.c
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__struct.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__functions.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__type_support.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/library_path.sh
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/library_path.dsv
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_c.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_c.so" to ""
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__type_support.c
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_introspection_c.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_c.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__traits.hpp
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__builder.hpp
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__struct.hpp
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/num.hpp
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/dds_fastrtps
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg
+-- Up-to-date: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/include/lcm_bridge/lcm_bridge/msg/detail/num__type_support.cpp
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_cpp.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_typesupport_cpp.so" to ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/pythonpath.sh
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/pythonpath.dsv
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/PKG-INFO
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/SOURCES.txt
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/top_level.txt
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge-0.0.1-py3.10.egg-info/dependency_links.txt
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/_num_s.c
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/__init__.py
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/_num.py
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/_lcm_bridge_s.ep.rosidl_typesupport_c.c
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/__init__.py
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/liblcm_bridge__rosidl_generator_py.so
+Listing '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge'...
+Compiling '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/__init__.py'...
+Listing '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg'...
+Compiling '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/__init__.py'...
+Compiling '/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/msg/_num.py'...
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/local/lib/python3.10/dist-packages/lcm_bridge/lcm_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_py.so
+-- Set runtime path of "/root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/lib/liblcm_bridge__rosidl_generator_py.so" to ""
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/msg/Num.idl
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/msg/Num.msg
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/package_run_dependencies/lcm_bridge
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/parent_prefix_path/lcm_bridge
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/ament_prefix_path.sh
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/ament_prefix_path.dsv
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/path.sh
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/environment/path.dsv
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.bash
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.sh
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.zsh
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/local_setup.dsv
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/package.dsv
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/ament_index/resource_index/packages/lcm_bridge
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_cExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_cppExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cppExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridge__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_pyExport.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/export_lcm_bridge__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/rosidl_cmake-extras.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridgeConfig.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/cmake/lcm_bridgeConfig-version.cmake
+-- Installing: /root/code/ros2_ws/src/lcm_bridge/install/lcm_bridge/share/lcm_bridge/package.xml
