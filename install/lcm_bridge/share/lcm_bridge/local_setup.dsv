@@ -1,4 +1,0 @@
-source;share/lcm_bridge/environment/ament_prefix_path.sh
-source;share/lcm_bridge/environment/library_path.sh
-source;share/lcm_bridge/environment/path.sh
-source;share/lcm_bridge/environment/pythonpath.sh
