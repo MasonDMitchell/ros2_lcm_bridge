@@ -14,7 +14,7 @@ sys.path.insert(1, '../lcm_messages/')
 from exlcm import ros_to_lcm
 
 #Import corresponding ROS message type
-from lcm_bridge.msg import LCMSend
+from ros2_lcm_bridge.msg import LCMSend
 
 #Create arguments for non-default usage of the node
 from argparse import ArgumentParser

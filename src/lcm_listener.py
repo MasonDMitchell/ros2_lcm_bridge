@@ -1,41 +1,56 @@
+#Author: Mason Mitchell
+#Email: masondm@seas.upenn.edu
+
 #Import ros & node class
 import rclpy
 from rclpy.node import Node
-
-#import lcm_to_ros helper
 import sys
-sys.path.insert(1, '../include/')
-from lcm_to_ros_tools import find_lcm_files, get_lcm_struct_name, get_lcm_variables_as_ros, generate_ros_message, read_ros_message 
-
-#Import lcm & lcm message type
+from argparse import ArgumentParser
 import lcm
-sys.path.insert(1, '../lcm_messages/')
-from exlcm import lcm_to_ros
+import importlib
 
-#Import corresponding ROS message type
-from lcm_bridge.msg import LCMReceived
+sys.path.insert(1, '../include/')
+from lcm_to_ros_tools import find_lcm_files, get_lcm_struct_name, get_lcm_variables_as_ros, generate_ros_message, read_ros_message, ros_message_name_to_package 
 
 #Create arguments for non-default usage of the node
-from argparse import ArgumentParser
 
 #Parse Arguments
 parser = ArgumentParser(
                     prog='LCMListener',
                     description='This is a ROS2 node that listens for a specific LCM message, and publishes it as a ROS message.')
 
-parser.add_argument('-m','--lcm_file_name',type=str,default='lcm_to_ros',help="Name of LCM message type being published")
-parser.add_argument('-f','--lcm_msg_folder',type=str,default='../lcm_messages',help="Folder to search for LCM file")
-parser.add_argument('-n','--lcm_node_name',type=str,default='EXAMPLE',help="Name of LCM node to listen for messages")
+parser.add_argument('lcm_file_name',type=str,help="LCM message-description filename (*.lcm)")
+parser.add_argument('lcm_channel_name',type=str,help="Name of LCM channel to listen for messages")
+parser.add_argument('-r','--ros_topic_name',type=str,default='',help="Name of ros topic to publish messages from")
+parser.add_argument('-n','--ros_node_name',type=str,default='lcm_listener',help="Name of ros topic to publish messages from")
+
 args = parser.parse_args()
+
+#If a ros node name is not given, default to lcm channel name
+if(args.ros_topic_name==''):
+    args.ros_topic_name=args.lcm_channel_name
+
 #If a file extension is added to lcm file name, remove it.
 if(args.lcm_file_name[-4:]==".lcm"):
     args.lcm_file_name = args.lcm_file_name[:-4]
 
+#Import lcm & lcm message type
+sys.path.insert(1, '../')
+
+
+#Import LCM & ROS messages dynamically
+
+lcm_struct_name = get_lcm_struct_name("../lcm_messages/"+args.lcm_file_name+".lcm")
+lcm_class = importlib.import_module("lcm_messages."+lcm_struct_name)
+lcm_class = getattr(lcm_class,lcm_struct_name)
+ros_class = importlib.import_module("ros2_lcm_bridge.msg."+ros_message_name_to_package(lcm_struct_name))
+ros_class = getattr(ros_class,lcm_struct_name)
+
 class LCMListener(Node):
     def __init__(self):
         #Standard ROS node & subscriber initialization
-        super().__init__('lcm_listener')
-        self.publisher_ = self.create_publisher(LCMReceived,'lcm_receiver',10) 
+        super().__init__(args.ros_node_name)
+        self.publisher_ = self.create_publisher(ros_class,str(args.ros_topic_name),10) 
 
         timer_period = 0.5 #seconds
         self.timer = self.create_timer(timer_period,self.timer_callback)
@@ -43,7 +58,7 @@ class LCMListener(Node):
     def timer_callback(self):
         #Setting up an LCM connection and listener
         lc = lcm.LCM()
-        subscription = lc.subscribe(args.lcm_node_name,self.lcm_handler)
+        subscription = lc.subscribe(args.lcm_channel_name,self.lcm_handler)
         
         #Spin while listening for a new LCM message
         while True:
@@ -51,8 +66,8 @@ class LCMListener(Node):
 
     #Handle LCM message, and publish a ROS message
     def lcm_handler(self, channel, data):
-        lcm_msg = lcm_to_ros.decode(data)
-        ros_msg = LCMReceived()
+        lcm_msg = lcm_class.decode(data)
+        ros_msg = ros_class()
 
         #This fails if package isn't rebuilt
         for i in range(len(lcm_msg.__slots__)):
@@ -66,19 +81,6 @@ class LCMListener(Node):
         self.publisher_.publish(ros_msg)
         
 def main(args):
-    
-    #Look in given directory for all lcm files, and return lists
-    lcm_file_names, lcm_file_paths = find_lcm_files(search_folder=args.lcm_msg_folder) 
-
-    #TODO Probably try-except this
-    #Get file path of lcm file that matches given lcm file name
-    lcm_file_path = lcm_file_paths[lcm_file_names.index(args.lcm_file_name)]
-
-    new_ros_message = get_lcm_variables_as_ros(lcm_file_path)
-    current_ros_message = read_ros_message("../msg/LCMReceived.msg")
-    if(new_ros_message != current_ros_message):
-        generate_ros_message(new_ros_message,"../msg/LCMReceived.msg")
-        raise ModuleNotFoundError("Current ROS message does not match the given LCM message and the lcm_bridge package needs rebuilt to fully generate the new ROS message. This is expected behaviour if you are using a new LCM message.")
     
     #Standard ROS node spinup
     rclpy.init()
