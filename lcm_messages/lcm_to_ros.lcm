@@ -1,6 +1,0 @@
-package exlcm;
-
-struct lcm_to_ros
-{
-	int64_t timezz;
-}
