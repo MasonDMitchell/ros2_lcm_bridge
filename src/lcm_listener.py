@@ -1,7 +1,6 @@
-#Author: Mason Mitchell
+#Author: Mason Mitchell, J. Diego Caporale
 #Email: masondm@seas.upenn.edu
 
-#Import ros & node class
 import rclpy
 from rclpy.node import Node
 import sys
@@ -12,17 +11,14 @@ import importlib
 sys.path.insert(1, '../include/')
 from lcm_to_ros_tools import find_lcm_files, get_lcm_struct_name, get_lcm_variables_as_ros, generate_ros_message, read_ros_message, ros_message_name_to_package 
 
-#Create arguments for non-default usage of the node
-
-#Parse Arguments
 parser = ArgumentParser(
                     prog='LCMListener',
                     description='This is a ROS2 node that listens for a specific LCM message, and publishes it as a ROS message.')
 
-parser.add_argument('lcm_file_name',type=str,help="LCM message-description filename (*.lcm)")
 parser.add_argument('lcm_channel_name',type=str,help="Name of LCM channel to listen for messages")
+parser.add_argument('lcm_file_name',type=str,help="LCM message-description filename (*.lcm)")
 parser.add_argument('-r','--ros_topic_name',type=str,default='',help="Name of ros topic to publish messages from")
-parser.add_argument('-n','--ros_node_name',type=str,default='lcm_listener',help="Name of ros topic to publish messages from")
+parser.add_argument('-n','--ros_node_name',type=str,default='lcm_listener',help="Name of this ros node")
 
 args = parser.parse_args()
 
@@ -34,12 +30,8 @@ if(args.ros_topic_name==''):
 if(args.lcm_file_name[-4:]==".lcm"):
     args.lcm_file_name = args.lcm_file_name[:-4]
 
-#Import lcm & lcm message type
-sys.path.insert(1, '../')
-
-
 #Import LCM & ROS messages dynamically
-
+sys.path.insert(1, '../')
 lcm_struct_name = get_lcm_struct_name("../lcm_messages/"+args.lcm_file_name+".lcm")
 lcm_class = importlib.import_module("lcm_messages."+lcm_struct_name)
 lcm_class = getattr(lcm_class,lcm_struct_name)
