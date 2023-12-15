@@ -7,6 +7,7 @@ import sys
 from argparse import ArgumentParser
 import lcm
 import importlib
+from vicon_receiver.msg import Position
 
 sys.path.insert(1, '../include/')
 from lcm_to_ros_tools import find_lcm_files, get_lcm_struct_name, get_lcm_variables_as_ros, generate_ros_message, read_ros_message,ros_message_name_to_package
@@ -31,8 +32,10 @@ sys.path.insert(1, '../')
 lcm_struct_name = get_lcm_struct_name("../lcm_messages/"+args.lcm_file_name+".lcm")
 lcm_class = importlib.import_module("lcm_messages."+lcm_struct_name)
 lcm_class = getattr(lcm_class,lcm_struct_name)
+sys.path.insert(1, '../')
 ros_class = importlib.import_module("ros2_lcm_bridge.msg."+ros_message_name_to_package(lcm_struct_name))
-ros_class = getattr(ros_class,lcm_struct_name)
+#ros_class = getattr(ros_class,lcm_struct_name)
+ros_class = Position
 
 class LCMPublisher(Node):
     def __init__(self):

@@ -36,7 +36,7 @@ execute_process (
 file(GLOB_RECURSE pyfiles CONFIGURE_DEPENDS ${PROJECT_SOURCE_DIR} "include/*.py")
 
 foreach(file ${pyfiles})
-	cmake_path(GET file FILENAME barename)
+	get_filename_component(barename ${file} NAME)
 	configure_file(${file} ${barename} COPYONLY)
 endforeach()
 
@@ -46,16 +46,18 @@ endforeach()
 file(GLOB_RECURSE lcmfiles CONFIGURE_DEPENDS ${PROJECT_SOURCE_DIR} "lcm_messages/*.lcm")
 
 foreach(file ${lcmfiles})
-	cmake_path(GET file FILENAME barename)
+	get_filename_component(barename ${file} NAME)
 	configure_file(${file} ${barename} COPYONLY)
 endforeach()
 
 #Run LCM_to_ROS message builder
-execute_process(COMMAND ${Python3_EXECUTABLE} "message_builder.py"
-		RESULT_VARIABLE python_result
-		OUTPUT_VARIABLE ros_msgs)
-
-message(STATUS "List of generated ROS files:\n${ros_msgs}")
+execute_process (
+	WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
+	COMMAND bash -c 
+	"python3 message_builder.py"
+	RESULT_VARIABLE python_result
+	OUTPUT_VARIABLE ros_msgs
+	)
 
 #Change python script print output to list
 separate_arguments(ros_msgs)
@@ -63,7 +65,7 @@ separate_arguments(ros_msgs)
 #Copying ROS messages from binary directory to source after python script generation
 #"It works, thank you for coming to my TED Talk." -J. Diego
 foreach(file ${ros_msgs})
-	cmake_path(GET file FILENAME barename)
+	get_filename_component(barename ${file} NAME)
 	configure_file("${CMAKE_CURRENT_BINARY_DIR}/${barename}" "${CMAKE_CURRENT_SOURCE_DIR}/${file}" COPYONLY)
 endforeach()
 
