@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Author: Mason Mitchell, J. Diego Caporale
 #Email: masondm@seas.upenn.edu
 
