@@ -15,7 +15,9 @@ This automatic ROS2 message generation is executed when you build your package, 
 
 # Package dependencies
 Ubuntu 22.04 (has not been tested on other flavors of Linux or versions of Ubuntu, or Mac, or Windows)
+
 ROS2 Humble		Install link: https://docs.ros.org/en/humble/Installation.html
+
 LCM		            Install link: http://lcm-proj.github.io/lcm/content/build-instructions.html
 
 # How to use this package
@@ -24,14 +26,19 @@ Clone this repository into your `src` directory inside your ROS2 repository.
 There must be an `.lcm` file in the `lcm_messages` directory before building the package to prevent a build crash. You can follow this structure to build an LCM file: http://lcm-proj.github.io/lcm/content/tutorial-lcmgen.html. However due to some custom ReGeX to translate from LCM to ROS, please make these LCM data types in as standard a format as possible, and do not add a package in your message definition. PascalCase or camelCase is verified to work for LCM data type names, but any LCM data type name must also be an eligible ROS2 message name. Please do not use LCM-standard snake_case for your data type name. Please check the example message in the repository for reference. NOTE: Do not run lcm-gen after creating your `.lcm` file the message generator will do this for you when building the package.
 
 (Re)build your repository from your ros2_ws directory
+
 `cd ../..`
+
 `colcon build`
 
 There should now be a `.msg` file inside the `msg` repository with the same content that each LCM message has in `lcm_messages`, but translated for ROS. If you have issues building the package, attempt building clean by removing your ‘build’ and ‘install’ directories inside your repository, and then run `colcon build` again. When you delete any `.lcm` files, it is also probably a good idea to build clean.
 
 You can now run either node using the following commands:
 
-`ros2 run ros2_lcm_bridge lcm_listener.py *lcm channel name* *lcm file name*` or
+`ros2 run ros2_lcm_bridge lcm_listener.py *lcm channel name* *lcm file name*` 
+
+or
+
 `ros2 run ros2_lcm_bridge lcm_publisher.py *ros topic name* *lcm channel name* *lcm file name*`
 
 with a user-filled `channel name`, `lcm file name`, and `ros topic name` where applicable. NOTE: These -must- be run inside the src directory inside the package. Otherwise there are dependency failures. 
