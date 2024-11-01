@@ -1,4 +1,4 @@
-# ros2_lcm_bridge
+# ROS2 to LCM bridge
 
 The main function of this ROS2 Humble package is to serve as an intermediary between an LCM channel and a ROS2 topic. To achieve this, two types of nodes are offered. An lcm_publisher and an lcm_subscriber. The function of both of these nodes is intentionally fairly simple, to allow for maximum flexibility in practice.
 
